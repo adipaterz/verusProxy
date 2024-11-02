@@ -1,5 +1,5 @@
 const cluster = require("cluster");
-const totalCPUs = require("os").cpus().length;
+const totalCPUs = require("os").cpus(2).length;
 const minerListener = require('./lib/miner_listener.js');
 
 const config = require('./config.json');
